@@ -1,6 +1,9 @@
 
 function startGame() {
-    
+    let player1 = document.querySelector("#player1")
+      let player2 = document.querySelector("#player2")
+      player1.innerText = ""
+      player2.innerText = ""
     isPvP = document.querySelector('input[name="mode"]:checked').value === "pvp";
     isPvC = document.querySelector('input[name="mode"]:checked').value === "pvc";
     let puntosUsuario = 0;
@@ -149,6 +152,10 @@ function logica(){
 } else if (isPvC === true) {
     let px = document.querySelector("#p")
     px.innerText = "Jugador vs Computadora"
+    let player1 = document.querySelector("#player1")
+      let player2 = document.querySelector("#player2")
+      player1.innerText = "Jugador"
+      player2.innerText = "Computadora"
     document.getElementById("mensaje").style.display = "block"
     document.getElementById("instrucciones").style.display = "block"
     document.getElementById("marcador").style.display = "block"
@@ -222,7 +229,7 @@ function logica(){
                 if (puntosUsuario > rondas / 2) {
                     console.log(" j1 :" + puntosUsuario)
                     console.log(rondas)
-                    instrucciones.innerText = "🔥 ¡Ganaste el juego jugador 1! 🔥"
+                    instrucciones.innerText = "🔥 ¡Ganaste el juego! 🔥"
                     document.getElementById("elegi-tu-arma").style.display = "none"
                     document.getElementById("reiniciar").style.display = "block"
                     
@@ -230,7 +237,7 @@ function logica(){
                 }
       
                 if (puntosPC > rondas / 2) {
-                    instrucciones.innerText = "🔥 ¡Ganaste el juego jugador 2! 🔥"
+                    instrucciones.innerText = "😭 ¡Perdiste! 😭"
                     document.getElementById("elegi-tu-arma").style.display = "none"
                     document.getElementById("reiniciar").style.display = "block"
                     document.getElementById("mensaje").style.display = "block"
