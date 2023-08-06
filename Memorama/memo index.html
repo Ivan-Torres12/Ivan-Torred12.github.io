@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./memo.css">
+    <title>Memorama</title>
+</head>
+<body>
+<div class="video-fondo">
+    <video autoplay muted loop id="video-fondo">
+        <source src="./20 (manuDT).mp4" type="video/mp4">
+    </video>
+</div>
+
+<div id="juego">
+    <table>
+        <td id="0" class="letra" onclick="girarCarta()" data-valor="valor">?</td>
+        <td id="1" class="letra" onclick="girarCarta()" data-valor="valor">?</td>
+        <td id="2" class="letra" onclick="girarCarta()" data-valor="valor">?</td>
+        <td id="3" class="letra" onclick="girarCarta()" data-valor="valor">?</td>
+      </tr>
+      <tr>
+        <td id="4" class="letra" onclick="girarCarta()" data-valor="valor">?</td>
+        <td id="5" class="letra" onclick="girarCarta()" data-valor="valor">?</td>
+        <td id="6" class="letra" onclick="girarCarta()" data-valor="valor">?</td>
+        <td id="7" class="letra" onclick="girarCarta()" data-valor="valor">?</td>
+      </tr>
+      <tr>
+        <td id="8" class="letra" onclick="girarCarta()" data-valor="valor">?</td>
+        <td id="9" class="letra" onclick="girarCarta()" data-valor="valor">?</td>
+        <td id="10" class="letra" onclick="girarCarta()" data-valor="valor">?</td>
+        <td id="11" class="letra" onclick="girarCarta()" data-valor="valor">?</td>
+      </tr>
+      <tr>
+        <td id="12" class="letra" onclick="girarCarta()" data-valor="valor">?</td>
+        <td id="13" class="letra" onclick="girarCarta()" data-valor="valor">?</td>
+        <td id="14" class="letra" onclick="girarCarta()" data-valor="valor">?</td>
+        <td id="15" class="letra" onclick="girarCarta()" data-valor="valor">?</td>
+      </tr>
+    </table>
+</div>
+
+<div class="centrar">
+    <input type="button" value="Iniciar" onclick="iniciarJuego()" class="boton-estilo"/>    
+    <input type="button" value="Reiniciar" onclick="resetearJuego()" class="boton-estilo"/> 
+</div>
+
+<script src="./memo.js"></script>
+</body>
+</html>
