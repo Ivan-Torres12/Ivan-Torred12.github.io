@@ -1,0 +1,137 @@
+#juego {
+    opacity: 0.9;
+    width: 625px;
+    height: 625px;
+    margin-left: 380px;
+    font-size: 65px;
+    margin-top: 5px;
+   
+}
+table {
+    width: 100%;
+    height: 95%;
+    cursor: pointer;
+}
+td {
+    width: 25%;
+    height: 25%;
+    background-color: rgb(186, 86, 233);
+    border: 3px solid rgb(152, 36, 206);
+    border-radius: 10px;
+  
+}
+.letra {
+    color: white;
+    font-size: 45px;
+    text-align: center;
+    font-style: georgia;
+}
+input {
+    width: 100px;
+    height:30px;
+}
+.centrar {
+    margin-left:589px;
+    margin-top: 2px;
+    
+}
+.boton-estilo {
+    background-color: #9d18be; 
+    color: white; 
+    padding: 5px 10px; 
+    font-size: 20px; 
+    border-radius: 35px; 
+    cursor: pointer; 
+    border: none;
+    vertical-align: middle;
+    margin-left: 2px;
+}
+.boton-estilo:hover {
+    background-color: #df5dff;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+  
+.video-fondo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+  }
+  #video-fondo {
+    object-fit:contain; 
+  }
+
+.btn-style{
+    background-color: #b057d3; 
+    color: white; 
+    padding: 6px 12px; 
+    font-size: 12px; 
+    border-radius: 35px; 
+    cursor: pointer; 
+    border: none;
+    vertical-align: middle;
+    margin-left: 2px;
+    margin-top: -50px;
+}
+
+.btn-style:hover{
+    background-color: #d48af1;
+}
+
+.style-btn{
+    background-color: #b057d3; 
+    color: white; 
+    padding: 6px 12px; 
+    font-size: 12px; 
+    border-radius: 35px; 
+    cursor: pointer; 
+    border: none;
+    margin-left: 2px;
+}
+
+.style-btn:hover{
+    background-color: #d48af1;
+}
+
+.boton-menu{
+    padding: 6px 12px; 
+    font-size: 14px; 
+    border-radius: 35px; 
+    cursor: pointer; 
+    border: none;
+    margin-left: 8px;
+    margin-top: 15px;
+    background-color: #f059c2;
+    color: rgb(255, 255, 255);
+}
+
+.boton-menu:hover{
+    background-color: #f193e2;
+}
+
+
+@media (min-width: 480px) and (max-width: 767px) {
+    #video-background source {
+        content: url('20%20(manuDT).mp4');
+    }
+}
+
+@media (min-width: 768px) {
+    #video-background source {
+        content: url('20%20(manuDT).mp4');
+    }
+}
+
+@media (min-width: 1200px) {
+    #video-background source {
+        content: url('20%20(manuDT).mp4');
+    }
+}
