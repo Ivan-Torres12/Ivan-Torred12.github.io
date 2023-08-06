@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, papel o tijera</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Piedra, papel o tijera</h1>
+        <p id="p">con HTML, CSS y JavaScript</p>
+    </header>
+    <main>
+        <p class="instrucciones" id="instrucciones" style="display: none;">
+            El primero en llegar a 5 puntos gana.
+        </p>
+        <div class="start-container" id="start-container" style="display: block;">
+          <div class="config"  id="config">
+            <label for="rounds">Número de rondas:</label>
+            <input type="number" id="rounds" value="3"  name="numeros-rondas" min="1"><br><br>
+            <label  for="modo-juego">Modo de juego:</label>
+            <br>
+            <input type="radio" name="mode" value="pvp" checked> Jugar contra otra persona
+            <input type="radio" name="mode" value="pvc"> Jugar contra el ordenador
+            <br> <br>
+            <button id="inicio" onclick="startGame()">Iniciar Juego</button>
+          </div>
+        </div>
+        <div class="marcador" id="marcador" style="display: none;">
+            <p class="nombre nombre-jugador" id="player1">Jugador</p>
+            <p class="nombre nombre-computadora" id="player2">Computadora</p>
+            <p class="puntos">
+                <span id="puntos-usuario">0</span>
+                <span>-</span>
+                <span id="puntos-computadora">0</span>
+            </p>
+        </div>
+        <div class="elegi-tu-arma" id="elegi-tu-arma" style="display: none;">
+            <h2>Elegí tu arma para el próximo turno</h2>
+            <div class="armas">
+                <button class="arma" value="0" id="piedra🗿">🗿</button>
+                <button class="arma" value="1" id="papel📋">📋</button>
+                <button class="arma" value="2" id="tijera✂️">✂️</button>
+            </div>
+        </div>
+        <div class="mensaje " id="mensaje" style="display: none;">
+            <p>
+                Usaste <span class="eleccion" id="eleccion-usuario">papel📋</span><br>
+                y la computadora usó <span class="eleccion" id="eleccion-computadora">piedra🗿</span>
+            </p>
+            <p id="gana-punto">¡Ganaste un punto! 🔥</p>
+        </div>
+        <button class="btn " id="reiniciar" style="display: none;">Reiniciar juego</button>
+        <br><a href="../index.html">
+            <button id="menu">menu</button>
+        </a>
+        <div class="musica" >
+            <br><audio autoplay controls  loop  src="./musica/Bad Time Trio Undertale AU  Triple The Threat NITRO Remix.mp3">
+        </div>
+    </main>
+  
+  <script src="js.js"></script>
+</body>
+</html>
