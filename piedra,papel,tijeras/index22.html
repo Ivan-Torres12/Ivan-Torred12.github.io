@@ -10,8 +10,8 @@
 <body>
 
     <header>
-        <h1>Piedra, papel o tijera</h1>
-        <p id="p">con HTML, CSS y JavaScript</p>
+        <h1>Piedra, Papel o Tijera</h1>
+        <p id="p">Bienvenido a Piedra, Papel o Tijera </p>
     </header>
     <main>
         <p class="instrucciones" id="instrucciones" style="display: none;">
@@ -19,12 +19,12 @@
         </p>
         <div class="start-container" id="start-container" style="display: block;">
           <div class="config"  id="config">
-            <label for="rounds">Número de rondas:</label>
+            <label id="round" for="rounds">Número de rondas:</label>
             <input type="number" id="rounds" value="3"  name="numeros-rondas" min="1"><br><br>
-            <label  for="modo-juego">Modo de juego:</label>
+            <label id="modes" for="modo-juego">Modo de juego:</label>
             <br>
-            <input type="radio" name="mode" value="pvp" checked> Jugar contra otra persona
-            <input type="radio" name="mode" value="pvc"> Jugar contra el ordenador
+            <input id="modes" type="radio" name="mode" value="pvp" checked> Jugar contra otra persona
+            <input id="modes" type="radio" name="mode" value="pvc"> Jugar contra el ordenador
             <br> <br>
             <button id="inicio" onclick="startGame()">Iniciar Juego</button>
           </div>
@@ -39,7 +39,7 @@
             </p>
         </div>
         <div class="elegi-tu-arma" id="elegi-tu-arma" style="display: none;">
-            <h2>Elegí tu arma para el próximo turno</h2>
+            <h2 id="mensaje2">Elegí tu arma para el próximo turno</h2>
             <div class="armas">
                 <button class="arma" value="0" id="piedra🗿">🗿</button>
                 <button class="arma" value="1" id="papel📋">📋</button>
@@ -60,6 +60,9 @@
         <div class="musica" >
             <br><audio autoplay controls  loop  src="./musica/Bad Time Trio Undertale AU  Triple The Threat NITRO Remix.mp3">
         </div>
+        <video autoplay muted loop id="video-container">
+            <source src="./28 (manuDT).mp4" type="video/mp4">
+        </video> 
     </main>
   
   <script src="js.js"></script>

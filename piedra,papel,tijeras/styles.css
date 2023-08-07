@@ -14,7 +14,7 @@
 }
 
 body {
-    background-color: var(--clr-purple);
+    background-color: var(--clr-purpl);
     color: var(--clr-beige);
 }
 
@@ -24,10 +24,15 @@ header {
     align-items: center;
     justify-content: center;
     padding: 1rem;
-    background-color: var(--clr-beige);
-    color: var(--clr-purple);
+    background-color:rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    backdrop-filter: blur(2px);
+    color: goldenrod;
+    text-shadow: 0 0 5px goldenrod,
+    0 0 10px white;
     border-bottom-left-radius: 3rem;
     border-bottom-right-radius: 3rem;
+    
 }
 
 main {
@@ -135,7 +140,7 @@ main {
     border: 0;
     line-height: 1;
     background-color: var(--clr-beige);
-    color: var(--clr-purple);
+    color: blue;
     font-size: 1rem;
     padding: .5rem;
     border-radius: .5rem;
@@ -147,11 +152,60 @@ main {
     border: 0;
     line-height: 1;
     background-color: var(--clr-beige);
-    color: var(--clr-purple);
     font-size: 1rem;
     padding: .5rem;
     border-radius: .5rem;
     cursor: pointer;
+    color: blue;
     text-transform: uppercase;
     font-weight: 600;
+}
+#video-container{
+    position: fixed;
+    z-index: -3;
+}
+@media(min-aspect-radio: 16/9){
+  #video-container{
+    width: 100%;
+    height: auto;
+  }
+}
+
+  @media(max-aspect-radio: 16/9){
+    #video-container{
+      width: auto;
+      height: 100%;
+    }
+}
+#gana-punto{
+    color: blue;
+    text-shadow: 0 0 5px white;
+}
+#mensaje{
+    color: green;
+    text-shadow: 0 0 5px white;
+}
+#mensaje2{
+    color: white;
+    text-shadow: 0 0 5px white,
+    0 0 10px black;
+}
+#reiniciar{
+    color: blue;
+    text-shadow: 0 0 5px white;
+}
+#instrucciones{
+    color: white;
+    text-shadow: 0 0 5px white,
+    0 0 10px black;
+}
+#round{
+    color: green;
+    text-shadow: 0 0 5px white,
+    0 0 10px white;
+}
+#modes{
+    color: white;
+    text-shadow:0 0 5px white,
+    0 0 10px black;
 }

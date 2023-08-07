@@ -1,5 +1,7 @@
 
 function startGame() {
+    let px = document.querySelector("#p")
+    px.innerText = "Bienvenido a Piedra, Papel o Tijera"
     let player1 = document.querySelector("#player1")
       let player2 = document.querySelector("#player2")
       player1.innerText = ""
@@ -141,6 +143,8 @@ function logica(){
           let rondas = document.querySelector("#rounds").value
           rondas = parseInt(rondas)
           rondas = 0
+          let px = document.querySelector("#p")
+          px.innerText = "Bienvenido a Piedra, Papel o Tijera"
           contenedorPuntosUsuario.innerText = puntosUsuario;
           contenedorPuntosPC.innerText = puntosPC;
           eleccionUsuario = null;
@@ -280,6 +284,8 @@ function logica(){
           let rondas = document.querySelector("#rounds").value
           rondas = parseInt(rondas)
           rondas = 0
+          let px = document.querySelector("#p")
+          px.innerText = "Bienvenido a Piedra, Papel o Tijera"
           contenedorPuntosUsuario.innerText = puntosUsuario;
           contenedorPuntosPC.innerText = puntosPC;
           const botonesArmas = document.querySelectorAll(".arma");
