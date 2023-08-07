@@ -47,23 +47,21 @@
     text-shadow: 0 0 5px #c314f9,
     0 0 10px  #c314f9;
   }
-  .video-container{
-    position: absolute;
-    top: 0;
-    left: 0;
-   
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+  #video-container{
+    position: fixed;
+    z-index: -1;
 }
-.video-container  video{
-    position: relative;
-    top: 50%;
-    left: 50%;
-    object-fit: cover;
+@media (min-aspect-radio: 16/9){
+  #video-container{
     width: 100%;
+    height: auto;
+  }
+}
+@media (max-aspect-radio: 16/9){
+  #video-container{
+    width: auto;
     height: 100%;
-    transform: translate(-50%,-50%);
+  }
 }
 header{
     padding: 30px 0;
